@@ -103,6 +103,7 @@ public class PlayerStats : MonoBehaviour {
             if (pq.quests[i].state == QuestState.Completed)
             {
                 //this quest is completed
+                Debug.Log("DANGER!!!!" + pq.quests[i].state);
                 rewardWindow.SetActive(true);
                 youWinText.text = "Quest: " + pq.quests[i].name;
                 xpText.text = pq.quests[i].expReward + "";

@@ -146,11 +146,13 @@ public class Dialogue : MonoBehaviour {
     public void CloseQuestReward()
     {
         questReward.SetActive(false);
+        Debug.Log("CLOSE QUEST REWARD");
     }
 
     public void Accept()
     {
         dialogueIndex++;
+        declineButton.SetActive(false);
     }
 
     public void Decline()

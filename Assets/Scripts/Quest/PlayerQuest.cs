@@ -10,7 +10,7 @@ public class PlayerQuest : MonoBehaviour
     {
         for (int i = 0; i < quests.Count; i++)
         {
-            if (quests[i].goal.isReached())
+            if (quests[i].goal.isReached() && quests[i].state != QuestState.Claimed)
             {
                 quests[i].Complete();   
             }
